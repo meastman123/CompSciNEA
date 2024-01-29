@@ -6,6 +6,92 @@
 		<!-- Website heading -->
 		<title>Weyside Physiotherapy Clinic</title>
 	</head>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+	.container {
+		flex: 1;
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 20px;
+	}
+
+	.header{
+		display: flex;
+		justify-conent: space-between;
+		align-items: center;
+	}
+	.dropdown {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		padding: 10px;
+		background-color: #f0f0f0
+	}
+	.dropdown-content: {
+		display: none;
+		position: absolute;
+		min-width: 160px;
+		background-color: #f9f9f9;
+		box-shadown: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.dropdown-item {
+		padding: 10px;
+		cursor: pointer;
+	}
+	.footer {
+		background-color: #f0f0f0;
+		padding: 20px;
+		text-align: center;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+	}
+	.pricing-table {
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.pricing-table th, .pricing-tablel td {
+		padding: 10px;
+	}
+	.pricing-table th {
+		background-color: #f0f0f0
+	}
+	.pricesub {
+		font-weight: bolder;
+		font-size: x-large;
+	}
+	.image-box {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		width: 150px;
+		height: 150px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+	.image-box img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	
+</style>
+	
 	<!-- Dropdown menu to navigate throughout the website -->
 	<body>
 		<div class="dropdown">
@@ -63,9 +149,7 @@
 			<!-- Subtitle text box -->
 			<div class="subtitle">
 				<h2></h2>
-				<p>
-					"ㅤ"
-				</p>
+				<p>ㅤ</p>
 				<p>ㅤ</p>
 				<p>ㅤ</p>
 				<p>ㅤ</p>
@@ -91,6 +175,62 @@
 			<!--  -->
 			<!--  -->
 			<!--  -->
-			<!--  -->
-					
+			
+
+			<!-- Create pricing plan table -->
+			<h1 class="pricesub">Pricing plan:</h1>
+
+			<!-- Table header -->
+			<table class="pricing-table">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Duration</th>
+						<th>Price</th>
+					</tr>
+					</thead>
+				<!-- Table content -->
+					<tbody>
+						<tr>
+							<td>Initial Consulation and Treatment</td>
+							<td>1 hour</td>
+							<td>£85</td>
+						</tr>
+					<tr>
+						<td>Follow-up Treatment</td>
+						<td>30 Minutes</td>
+						<td>£60</td>
+					</tr>
+					<tr>
+						<td>Sports Massage</td>
+						<td>1 Hour</td>
+						<td>£70</td>
+					</tr>
+					</tbody>
+			</table>
+
+			<!-- Create footer with contact information -->
+			<footer class="footer">
+				<div class="container">
+					<p>
+						Address: Unit 2, Townmill, Bagshot Road, Chobham, Surrey, GU24 8BZ<br />
+						Tel/Fax: 01276 857474<br />
+						Email: enquiries@weysidephysio.co.uk
+					</p>
+				</div>
+			</footer>
+
+			<!-- Script for downdown menu functionality (hide / show) -->
+			<script>
+				// Select the dropdown button
+				const dropdownButton = document.querySelector(".dropdown-button");
+				// Find the content of the menu
+				const dropdownContent = document.querySelector(".dropwdown-content");
+
+				// Listen for a click on the button
+				// When clicked, show the menu
+				dropdownButton.addEventListener("click", () => {
+					dropdownContent.classList.toggle("show");
+				});
+			</script>
 	</body>
