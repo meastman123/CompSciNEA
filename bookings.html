@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Weyside Physiotherapy Clinic - Bookings</title>
+
+		<style>
+			body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+
+			.container {
+				flex: 1;
+				max-width: 960px;
+				margin: 0 auto;
+				padding: 20px;
+				text-align: center;
+			}
+
+			.header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				min-width: 160px;
+				background-color: #f9f9f9;
+				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+				z-index: 1;
+			}
+
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+
+			.dropdown-item {
+				padding: 10px;
+				cursor: pointer;
+			}
+
+			.footer {
+				background-color: #f0f0f0;
+				padding: 20px;
+				text-align: center;
+			}
+
+			.footer p {
+				margin: 0;
+			}
+
+			.content {
+				margin-top: 20px;
+				text-align: left;
+			}
+
+			.form {
+				margin-top: 20px;
+			}
+
+			.form input,
+			.form textarea {
+				margin-bottom: 10px;
+				padding: 8px;
+				width: 100%;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+			}
+
+			.form textarea {
+				height: 100px;
+			}
+			.form button {
+				background-color: #34cfeb;
+				color: #fff;
+				padding: 10px 20px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+
+			.image-box {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				width: 150px;
+				height: 150px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				overflow: hidden;
+			}
+
+			.image-box img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			
+			</style>
+		
+	</head>
+
+	<body>
+		<!-- Dropdown menu to navigate throughout the website -->
+		<div class="dropdown">
+		<!-- Div to contain specfic items -->
+		<div class="dropdown-content">
+			<!-- Create specific item within dropdown menu -->
+			<div class="dropdown-item">
+				<a href="weyside.html">Home</a>
+			</div>
+			<div class="dropdown-item">
+				<a href="bookings.html">Bookings</a>
+			</div>
+			<div class="dropdown-item">
+				<a href="#">Contact Us</a>
+			</div>
+			<div class="dropdown-item">
+				<a href="looking.html">Looking After You</a>
+			</div>
+			<div class="dropdown-item">
+				<a href="accu.html">Acupuncture</a>
+			</div>
+			<div class="dropdown-item">
+				<a href="about.html">About You and Us</a>
+			</div>
+		</div>
+		</div>
+
+		<span>&#9776;</span>
+		
+
+		<!-- Create a box for image -->
+		<div class="image-box">#
+			<!-- Reference to image -->
+			<img src="logoweyside.jpg" alt="Logo">
+		</div>
+
+		<!-- Create a container for header -->
+		<div class="container">
+			<!-- Create a header -->
+			<div class="header">
+				<!-- Header text box -->
+				<h1>Weyside Physiotherapy Clinic - Appointment Booking</h1>
+			</div>
+
+			<!-- Create a div for text -->
+			<div class="desc">
+				<!-- Create a text box -->
+				<p>To make a booking, please provide the following information:</p>
+			</div>
+
+			<!-- Create a content form -->
+			<div class="content">
+				<!-- Create a form for user input -->
+				<form class="form" action="send_email.php" method="POST">
+					<!-- Create a label for text box -->
+					<label for="name">Name:</label>
+					<!-- Create an input text box -->
+					<input type="text" id="name" name="name">
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email">
+					<label for="phone">Phone Number:</label>
+					<input type="tel" id="phone" name="phone">
+					<label for="description">Description:</label>
+					<textarea id="description" name="description"></textarea>
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+
+		<!-- Create a footer -->
+		<footer class="footer">
+			<!-- Container for footer contents -->
+			<div class="container">
+				<!-- Footer contents -->
+				<p>
+					Address: Unit 2, Townmill, Bagshot Road, Chobham, Surrey, GU24 8BZ<br>
+					Tel/Fax: 01276 857474
+				</p>
+			</div>
+		</footer>
+
+		<!-- Script for downdown menu functionality (hide / show) -->
+			<script>
+				// Select the dropdown button
+				const dropdownButton = document.querySelector(".dropdown-button");
+				// Find the content of the menu
+				const dropdownContent = document.querySelector(".dropwdown-content");
+
+				// Listen for a click on the button
+				// When clicked, show the menu
+				dropdownButton.addEventListener("click", () => {
+					dropdownContent.classList.toggle("show");
+				});
+			</script>
+					
+	</body>
