@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weyside Physiotherapy Clinic Calendar</title>
+		<style>
+
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				min-height: 100vh;
+			}
+			.container {
+				flex: 1;
+				max-width: 960px;
+				margin: 0 auto;
+				padding: 20px;
+			}
+			.header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.dropdown {
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 999;
+				padding: 10px;
+				background-color: #f0f0f0;
+			}
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				min-width: 160px;
+				background-color: #f9f9f9;
+				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+				z-index: 1;
+			}
+			.dropdown:hover .dropdown-content {
+				display: block;
+			}
+			.dropdown-item {
+				padding: 10px;
+				cursor: pointer;
+			}
+
+			.dropdown-item {
+				padding: 10px;
+				cursor: pointer;
+			}
+
+			.calContainer {
+				margin: auto;
+				width: 75%;
+				padding: 10px;
+			}
+			
+			
+		</style>
+	</head>
+
+<body>
+
+	<!-- Dropdown menu to navigate throughout the website -->
+		<div class="dropdown">
+		<!-- Div to contain specfic items -->
+		<div class="dropdown-content">
+			<!-- Create specific item within dropdown menu -->
+			<div class="dropdown-item">
+				<a href="index.html">Home</a>
+			</div>
+			<div class="dropdown-item">
+				<a href="bookings.html">Bookings</a>
+			</div>
+			<div class="dropdown-item">
+				<a href="#">Contact Us</a>
+			</div>
+			<div class="dropdown-item">
+				<a href="looking.html">Looking After You</a>
+			</div>
+			<div class="dropdown-item">
+				<a href="accu.html">Acupuncture</a>
+			</div>
+			<div class="dropdown-item">
+				<a href="about.html">About You and Us</a>
+			</div>
+			<div class="dropdown-item">
+				<a href="calendar.html">Calendar</a>
+			</div>
+		</div>
+		</div>
+
+	<span>&#9776;</span>
+	
+	<!-- Create header container -->
+	<div class="container">
+		<!-- Create header div -->
+		<div class="header">
+			<!-- Add header text -->
+			<h1>Weyside Physiotherapy Clinic - Calendar</h1>
+		</div>
+	</div>
+
+
+	<!-- Create calendar container -->
+	<div class="calContainer">
+		<!-- Create google calendar showcase -->
+		<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FLondon&src=Y184ZDI2ZmNkODQzZjU0MWU0NjQ0NTNkYjQxNWVkYTVkOGFiMzA5Y2Q5NDI1ODVlMzVmOWQxM2I1ZGQ4YTg0YzEwQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Z29yZG9ucy5zdXJyZXkuc2NoLnVrX2NsYXNzcm9vbWU5ZDljMGNiQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Z29yZG9ucy5zdXJyZXkuc2NoLnVrX2NsYXNzcm9vbTIxMzI2YjU5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=Z29yZG9ucy5zdXJyZXkuc2NoLnVrX2NsYXNzcm9vbWU3MDA1NzI4QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23795548&color=%23263238&color=%234a148c&color=%233e2723" style="border:solid 1px #777" width="1400" height="800" frameborder="0" scrolling="yes"></iframe>
+	
+
+	
+</body>
