@@ -1,1 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weyside Physiotherapy Clinic - Looking After You</title>
+	<!-- Create css style section for formatting -->
+  <style>
+  
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      flex: 1;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+    }
+
+		.dropdown {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			padding: 10px;
+			background-color: #f0f0f0;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			min-width: 160px;
+			background-color: #f9f9f9;
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+		.dropdown-item {
+			padding: 10px;
+			cursor: pointer;
+		}
+
+    .dropdown-item {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .footer {
+      background-color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    .content {
+      margin-top: 20px;
+    }
+
+    .image-box {
+      float: right;
+      width: 200px;
+      margin: 10px;
+    }
+
+    .small-text-box {
+      clear: right;
+      text-align: right;
+      margin-top: 10px;
+    }
+    .image-box2 {
+  		position: absolute;
+  		top: 20px;
+  		right: 20px;
+  		width: 150px;
+  		height: 150px;
+  		border: 1px solid #ccc;
+  		border-radius: 5px;
+  		overflow: hidden;
+		}
+
+		.image-box2 img {
+ 			width: 100%;
+  		height: 100%;
+  		object-fit: cover;
+		}
+  </style>
+</head>
+
+<!-- Create page body -->
+<body>
+	<!-- Dropdown menu to navigate throughout the website -->
+	<div class="dropdown">
+	<!-- Div to contain specfic items -->
+	<div class="dropdown-content">
+		<!-- Create specific item within dropdown menu -->
+		<div class="dropdown-item">
+			<a href="index.html">Home</a>
+		</div>
+		<div class="dropdown-item">
+			<a href="bookings.html">Bookings</a>
+		</div>
+		<div class="dropdown-item">
+			<a href="#">Contact Us</a>
+		</div>
+		<div class="dropdown-item">
+			<a href="looking.html">Looking After You</a>
+		</div>
+		<div class="dropdown-item">
+			<a href="accu.html">Acupuncture</a>
+		</div>
+		<div class="dropdown-item">
+			<a href="about.html">About You and Us</a>
+		</div>
+		<div class="dropdown-item">
+			<a href="calendar.html">Calendar</a>
+		</div>
+	</div>
+	</div>
+    <span>&#9776;</span>
+  </div>
+
+	<!-- Create image box -->
+  <div class="image-box2">
+		<!-- Source image -->
+    <img src="logoweyside.jpg" alt="Logo">
+  </div>
+
+	<!-- Create header container -->
+  <div class="container">
+		<!-- Create div -->
+    <div class="header">
+			<!-- Add header text -->
+      <h1>ㅤㅤㅤWeyside Physiotherapy Clinic - Looking After You</h1>
+    </div>
+		<!-- Create content div -->
+    <div class="content">
+			<!-- Create image box -->
+      <div class="image-box">
+				<!-- Source image -->
+        <img src="chris.jpg" alt="Image">
+      </div>
+			<!-- Create small text box -->
+      <div class="small-text-box">
+				<!-- Image description -->
+        <p style="font-weight: bold;">Chris Lytle MCSP SRP</p>
+        <p>Chartered Physiotherapist</p>
+      </div>
+      <div style="clear: both;"></div>
+			<!-- Create paragraph text box -->
+      <p>
+        Working closely with local Consultants, GP’s and other health professionals, with many years of experience in the public and private sectors, we provide trauma and elective surgery, including orthopaedics and sport injuries.
+      </p>
+      <p>
+        Our aim is to restore the control of your body by providing a holistic approach through the treatment offered.
+      </p>
+      <p>
+        On your initial assessment, we will perform the necessary tests to provide you with a diagnosis and the treatment options that you need to consider. On agreeing your treatment programme we will then provide you with your treatment on the same appointment.
+      </p>
+      <p>
+        On each agreed follow-up appointment, we will re-assess your clinical presentation and review and discuss your personal treatment pathway. This ensures that you are regularly informed of your condition throughout the service we provide, thus allowing you to maintain full control of your direction towards a healthier lifestyle.
+      </p>
+      <p>
+        We are providing this service to work with you on the road to recovery, the sooner the better!
+      </p>
+      <p>
+        We apply physical techniques to promote and restore physical, psychological, and social well-being.
+      </p>
+      <p>
+        For long-term back pain sufferers, it may even be appropriate to initiate a back care muscle stabilization program with the possible use of gym balls and other equipment to facilitate better control.
+      </p>
+
+    </div>
+  </div>
+
+	<!-- Create a footer -->
+		<footer class="footer">
+			<!-- Container for footer contents -->
+			<div class="container">
+				<!-- Footer contents -->
+				<p>
+					Address: Unit 2, Townmill, Bagshot Road, Chobham, Surrey, GU24 8BZ<br>
+					Tel/Fax: 01276 857474
+				</p>
+			</div>
+		</footer>
+
+		<!-- Script for downdown menu functionality (hide / show) -->
+		<script>
+			// Select the dropdown button
+			const dropdownButton = document.querySelector(".dropdown-button");
+			// Find the content of the menu
+			const dropdownContent = document.querySelector(".dropwdown-content");
+
+			// Listen for a click on the button
+			// When clicked, show the menu
+			dropdownButton.addEventListener("click", () => {
+				dropdownContent.classList.toggle("show");
+			});
+		</script>
+	
+</body>
+
+</html>
