@@ -60,12 +60,35 @@
 				width: 75%;
 				padding: 10px;
 			}
+
+			.image-box {
+				position: absolute;
+				top: 30px;
+				right: 180px;
+				width: 150px;
+				height: 150px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+				overflow: hidden;
+			}
+
+				.image-box img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
 			
 			
 		</style>
 	</head>
 
 <body>
+
+	<!-- Create div for image class -->
+	<div class="image-box">
+		<!-- Source image -->
+		<img src="logoweyside.jpg">
+	</div>
 
 	<!-- Dropdown menu to navigate throughout the website -->
 		<div class="dropdown">
