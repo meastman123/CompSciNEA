@@ -216,7 +216,7 @@
 				// When clicked, show the menu
 				dropdownButton.addEventListener("click", () => {
 					dropdownContent.classList.toggle("show");
-				});
+				})
 			</script>
 
 		<!-- Create container -->
@@ -245,11 +245,6 @@
 				$headers = "From $email\r\n";
 				$headers = "Reply-To $email\r\n";
 
-				if (mail($to, $subject, $message, $headers)) {
-					echo "<h2>success</h2>";
-				} else {
-					echo "<h2>error</h2>";
-				}
 		}
 		?>
 					
