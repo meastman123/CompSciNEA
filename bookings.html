@@ -116,6 +116,11 @@
 				height: 100%;
 				object-fit: cover;
 			}
+
+			.newForm {
+				transform: translate(70px, 0px);
+				float: centre;
+			}
 			
 			</style>
 		
@@ -149,11 +154,10 @@
 				<a href="calendar.html">Calendar</a>
 			</div>
 		</div>
+			<span>&#9776;</span>
 		</div>
 
-		<span>&#9776;</span>
 		
-
 		<!-- Create a box for image -->
 		<div class="image-box">
 			<!-- Reference to image -->
@@ -174,24 +178,50 @@
 				<p>To make a booking, please provide the following information:</p>
 			</div>
 
-			<!-- Create a content form -->
-			<div class="content">
-				<!-- Create a form for user input -->
-				<form class="form" action="send_email.php" method="POST">
-					<!-- Create a label for text box -->
-					<label for="name">Name:</label>
-					<!-- Create an input text box -->
-					<input type="text" id="name" name="name">
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email">
-					<label for="phone">Phone Number:</label>
-					<input type="tel" id="phone" name="phone">
-					<label for="description">Description:</label>
-					<textarea id="description" name="description"></textarea>
-					<button action="send_email.php" method="POST" type="submit">Submit</button>
-				</form>
-			</div> 
-		</div>
+
+			<div class="newForm" style="font-family: Arial, sans-sherif; border-radius: 5px; padding: 1px 30px; width: 75%; ">
+				 <h2 style="font-size:30px">Contact Us</h2>
+				 <form accept-charset="UTF-8" action="https://getform.io/f/Xe0557ax" method="POST" enctype="multipart/form-data"  target="_blank" id="wpform">
+						<div>
+							 <label>Full Name</label>
+							 <div>
+									<input style="margin-top: 5px; background-color: #fff; height:35px; width:400px;" type="text" name="first_name" placeholder="Enter your name and surname" required="required">
+							 </div>
+						</div>
+						<br>
+						<div>
+							 <label>Email address</label>
+							 <div>
+									<input style="margin-top: 5px;background-color: #fff; height:35px; width:400px;" type="email" name="email" placeholder="Enter your email address" required="required">
+							 </div>
+						</div>
+						<br>
+						<div>
+							 <label>Your Message</label>
+							 <div>
+									<textarea style="margin-top: 5px;background-color: #fff; height:50px; width:400px;" type="text" name="message" placeholder="Enter your appointment type" required="required"></textarea>
+							 </div>
+						</div>
+						<div>
+							<label>Date of booking</label>
+								 <div>
+										<textarea style="margin-top: 5px;background-color: #fff; height:50px; width:400px;" type="text" name="message" placeholder="Enter your prefered booking date" required="required"></textarea>
+								 </div>
+							</div>
+							<div>
+								<label>Time of booking</label>
+									 <div>
+											<textarea style="margin-top: 5px;background-color: #fff; height:50px; width:400px;" type="text" name="message" placeholder="Enter your prefered booking time" required="required"></textarea>
+									 </div>
+								</div>
+							 <label>Upload document:</label>
+							 <input type="file" name="file" >
+						</div>
+						<br>
+						<input type="hidden" name="utf8" value="✓">
+						<button style="font-size:14px; background-color:#6b7ddf; color:#fff; font-weight:bold; padding:10px 35px; margin: 5px 0 0 0;" type="submit">SUBMIT</button>
+				 </form>
+			</div>
 
 		<!-- Create a footer -->
 		<footer class="footer">
@@ -219,13 +249,7 @@
 				})
 			</script>
 
-		<!-- Create container -->
-		<div class="container2">
-			<!-- Create a contained container -->
-			<div class="contContainer">
-				<!-- Create text box -->
-				<p>Contained Container</p>
-
+		
 				</body>
 		
 		<?php

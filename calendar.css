@@ -13,11 +13,10 @@ body {
 	padding: 20px;
 }
 
-.desc {
-	float: middle;
-	margin: 10px;
+.descText {
+	display: fixed;
 	top: 50px;
-	display: flex;
+	float: middle;
 }
 
 .calContainer {
@@ -69,7 +68,7 @@ body {
 .image-box {
 	position: absolute;
 	top: 30px;
-	right: 180px;
+	right: 80px;
 	width: 150px;
 	height: 150px;
 	border: 1px solid #ccc;

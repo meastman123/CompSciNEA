@@ -5,95 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="calendar.css">
 		<title>Weyside Physiotherapy Clinic Calendar</title>
-		<style>
-
-			body {
-				font-family: Arial, sans-serif;
-				margin: 0;
-				padding: 0;
-				display: flex;
-				flex-direction: column;
-				min-height: 100vh;
-			}
-			.container {
-				flex: 1;
-				max-width: 960px;
-				margin: 0 auto;
-				padding: 20px;
-			}
-
-			.desc {
-				float: middle;
-				margin: 10px;
-				top: 50px;
-				display: flex;
-			}
-
-			.calContainer {
-				top: -60px;
-				position: relative;
-			}
-			
-			.header {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-			}
-
-			.dropdown {
-				position: fixed;
-				top: 0;
-				left: 0;
-				z-index: 999;
-				padding: 10px;
-				background-color: #f0f0f0;
-			}
-			.dropdown-content {
-				display: none;
-				position: absolute;
-				min-width: 160px;
-				background-color: #f9f9f9;
-				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-				z-index: 1;
-			}
-			.dropdown:hover .dropdown-content {
-				display: block;
-			}
-			.dropdown-item {
-				padding: 10px;
-				cursor: pointer;
-			}
-
-			.dropdown-item {
-				padding: 10px;
-				cursor: pointer;
-			}
-
-			.calContainer {
-				margin: auto;
-				width: 75%;
-				padding: 10px;
-			}
-
-			.image-box {
-				position: absolute;
-				top: 30px;
-				right: 180px;
-				width: 150px;
-				height: 150px;
-				border: 1px solid #ccc;
-				border-radius: 5px;
-				overflow: hidden;
-			}
-
-			.image-box img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-			
-			
-		</style>
+		
 	</head>
 
 <body>
@@ -131,9 +43,10 @@
 				<a href="calendar.html">Calendar</a>
 			</div>
 		</div>
+			<span>&#9776;</span>
 		</div>
 
-	<span>&#9776;</span>
+
 	
 	<!-- Create header container -->
 	<div class="container">
@@ -145,9 +58,9 @@
 	</div>
 
 	<!-- Create a div for container -->
-	<div class="desc">
+	<div class="description">
 		<!-- Create text box-->
-		<p>This calendar displays what dates and times are available for bookings</p>
+		<p class="descText">ㅤ </p>
 	</div>
 	
 
