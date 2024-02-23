@@ -4,98 +4,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="accu.css">
+		<script src="script.js"></script>
+		<link rel="icon" type="image/x-icon" href="logoweyside.jpg">
 		<title>Acupuncture</title>
-		<style>
-
-			body {
-				font-family: Arial, sans-serif;
-				margin: 0;
-				padding: 0;
-				display: flex;
-				flex-direction: column;
-				min-height: 100vh;
-			}
-			.container {
-				flex: 1;
-				max-width: 960px;
-				margin: 0 auto;
-				padding: 20px;
-			}
-			
-			.header {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				margin-bottom: 20px;
-			}
-			.dropdown {
-				position: fixed;
-				top: 0;
-				left: 0;
-				z-index: 999;
-				padding: 10px;
-				background-color: #f0f0f0;
-			}
-			.dropdown-content {
-				display: none;
-				position: absolute;
-				min-width: 160px;
-				background-color: #f9f9f9;
-				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-				z-index: 1;
-			}
-			.dropdown:hover .dropdown-content {
-				display: block;
-			}
-			.dropdown-item {
-				padding: 10px;
-				cursor: pointer;
-			}
-
-			.dropdown-item {
-				padding: 10px;
-				cursor: pointer;
-			}
-
-			.text-box {
-				margin-bottom: 20px;
-			}
-			
-			.text-box p {
-				margin-bottom: 10px;
-			}
-
-			.image-box {
-				position: absolute;
-				top: 20px;
-				right: 20px;
-				width: 150px;
-				height: 150px;
-				border: 1px solid #ccc;
-				border-radius: 5px;
-				overflow: hidden;
-			}
-
-			.image-box img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-
-			.footer {
-				background-color: #f0f0f0;
-				padding: 20px;
-				text-align: center;
-				margin-top: auto;
-			}
-
-			.title {
-				font-size: 24px;
-				font-weight: bold;
-				margin-bottom: 10px;
-			}
-			
-		</style>
+		
 	</head>
 
 
@@ -112,9 +25,6 @@
 				<a href="bookings.html">Bookings</a>
 			</div>
 			<div class="dropdown-item">
-				<a href="#">Contact Us</a>
-			</div>
-			<div class="dropdown-item">
 				<a href="looking.html">Looking After You</a>
 			</div>
 			<div class="dropdown-item">
@@ -127,9 +37,10 @@
 				<a href="calendar.html">Calendar</a>
 			</div>
 		</div>
+			<span>&#9776;</span>
 		</div>
 
-		<span>&#9776;</span>
+		
 
 		<!-- Create container for image -->
 		<div class="container">
@@ -263,20 +174,5 @@
 		</div>
 	</div>
 
-			
-
-		<!-- Script for downdown menu functionality (hide / show) -->
-		<script>
-			// Select the dropdown button
-			const dropdownButton = document.querySelector(".dropdown-button");
-			// Find the content of the menu
-			const dropdownContent = document.querySelector(".dropwdown-content");
-
-			// Listen for a click on the button
-			// When clicked, show the menu
-			dropdownButton.addEventListener("click", () => {
-				dropdownContent.classList.toggle("show");
-			});
-		</script>
 	</body>
 	
