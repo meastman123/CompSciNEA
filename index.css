@@ -23,7 +23,7 @@ body {
 	left: 0;
 	z-index: 999;
 	padding: 10px;
-	background-color: #f0f0f0;
+	background-color: #009999;
 }
 .dropdown-content {
 	display: none;
@@ -47,7 +47,7 @@ body {
 }
 
 .footer {
- background-color: #f0f0f0;
+ background-color: #009999;
  padding: 20px;
  text-align: center;
  position: fixed;
