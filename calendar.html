@@ -3,69 +3,20 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="calendar.css">
+		<script src="script.js"></script>
+		<link rel="icon" type="image/x-icon" href="logoweyside.jpg">
 		<title>Weyside Physiotherapy Clinic Calendar</title>
-		<style>
-
-			body {
-				font-family: Arial, sans-serif;
-				margin: 0;
-				padding: 0;
-				display: flex;
-				flex-direction: column;
-				min-height: 100vh;
-			}
-			.container {
-				flex: 1;
-				max-width: 960px;
-				margin: 0 auto;
-				padding: 20px;
-			}
-			.header {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-			}
-
-			.dropdown {
-				position: fixed;
-				top: 0;
-				left: 0;
-				z-index: 999;
-				padding: 10px;
-				background-color: #f0f0f0;
-			}
-			.dropdown-content {
-				display: none;
-				position: absolute;
-				min-width: 160px;
-				background-color: #f9f9f9;
-				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-				z-index: 1;
-			}
-			.dropdown:hover .dropdown-content {
-				display: block;
-			}
-			.dropdown-item {
-				padding: 10px;
-				cursor: pointer;
-			}
-
-			.dropdown-item {
-				padding: 10px;
-				cursor: pointer;
-			}
-
-			.calContainer {
-				margin: auto;
-				width: 75%;
-				padding: 10px;
-			}
-			
-			
-		</style>
+		
 	</head>
 
 <body>
+
+	<!-- Create div for image class -->
+	<div class="image-box">
+		<!-- Source image -->
+		<img src="logoweyside.jpg">
+	</div>
 
 	<!-- Dropdown menu to navigate throughout the website -->
 		<div class="dropdown">
@@ -77,9 +28,6 @@
 			</div>
 			<div class="dropdown-item">
 				<a href="bookings.html">Bookings</a>
-			</div>
-			<div class="dropdown-item">
-				<a href="#">Contact Us</a>
 			</div>
 			<div class="dropdown-item">
 				<a href="looking.html">Looking After You</a>
@@ -94,9 +42,10 @@
 				<a href="calendar.html">Calendar</a>
 			</div>
 		</div>
+			<span>&#9776;</span>
 		</div>
 
-	<span>&#9776;</span>
+
 	
 	<!-- Create header container -->
 	<div class="container">
@@ -106,6 +55,13 @@
 			<h1>Weyside Physiotherapy Clinic - Calendar</h1>
 		</div>
 	</div>
+
+	<!-- Create a div for container -->
+	<div class="description">
+		<!-- Create text box-->
+		<p class="descText">ㅤ </p>
+	</div>
+	
 
 
 	<!-- Create calendar container -->
