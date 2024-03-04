@@ -23,4 +23,4 @@ echo 'Email Sent.';
 
 ?>
 
-// credit to https://stackoverflow.com/questions/9355751/how-to-send-an-automatic-email-at-a-click-of-a-button
+// credit to https://stackoverflow.com/questions/9355751/how-to-send-an-automatic-email-at-a-click-of-a-buttonava
