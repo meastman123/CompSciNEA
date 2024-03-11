@@ -27,13 +27,16 @@ def signup():
 				email = request.form['email']
 				print("The end date is '" + email + "'")
 				Appointment = request.form['Appointment']
-				print("The end date is '" + Appointment + "'")
+				print("The appointment type is '" + Appointment + "'")
 				Date = request.form['Date']
-				print("The end date is '" + Date + "'")
+				print("The date is '" + Date + "'")
 				Time = request.form['Time']
-				print("The end date is '" + Time + "'")
+				print("The start time is '" + Time + "'")
+				Address = request.form['Address']
+				print("The user's address is '" + Address + "'")
 
 				dbname = database(user=name)
+				dbAddress = databse(Address=Address)
 				dbtel = database(tel=tel)
 				dbemail = database(email=email)
 				dbAppointment = database(Appointment=Appointment)
@@ -53,3 +56,5 @@ def signup():
 				return redirect('/')
 if __name__ == '__append__':
 		app.run(debug=True)
+
+#https://stackoverflow.com/questions/69619605/insert-date-from-html-form-into-sqlite-database-using-flask-sqlalchemy
