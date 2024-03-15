@@ -1,0 +1,19 @@
+-- database: c:\Users\Max\Desktop\pygame\CompSciNEA-1\Data.db
+
+-- Use the ▷ button in the top right corner to run the entire file.
+
+CREATE TABLE Users (
+    UserID INTEGER,
+    UserName STRING,
+    UserEmail STRING,
+    UserTel INTEGER,
+    PRIMARY KEY(UserID)
+);
+
+CREATE TABLE Bookings (
+    UserID INTEGER,
+    BookingDate Date,
+    BookingTime Time,
+    BookingType STRING,
+    FOREIGN KEY(UserID) REFERENCES Users(UserID)
+);
