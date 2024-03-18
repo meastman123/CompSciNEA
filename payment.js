@@ -17,3 +17,4 @@ document.getElementById("paymentForm").addEventListener("submit", function(event
     // You can redirect the user to a success or error page after processing the payment
   });
   
+  console.log("Hello")
